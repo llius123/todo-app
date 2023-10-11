@@ -1,4 +1,3 @@
-import type { Todo } from "../domain/Todo";
 import type { TodoRepo } from "../repo/TodoRepo";
 
 

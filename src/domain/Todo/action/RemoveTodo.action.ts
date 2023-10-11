@@ -1,4 +1,3 @@
-import { Todo } from "../domain/Todo";
 import { TodoRepo } from "../repo/TodoRepo";
 
 export class RemoveTodo {
