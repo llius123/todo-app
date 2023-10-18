@@ -31,12 +31,18 @@ export default component$(() => {
 
 
     return (
-        <>
-            <div class="flex mt-4">
+        <div style={{
+            padding: '10px',
+            height: '100vh',
+            overflow: 'hidden'
+        }}>
+            <div class="flex">
                 <input ref={inputRef} class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker" placeholder="Add Todo" />
                 <button class="btn btn-primary" onClick$={saveTodo}>Create TODO</button>
             </div>
-            <TodoList todos={todos.value} refreshList={getTodos} />
-        </>
+            <div style={{ overflow: 'auto', flex: 1, height: 'auto' }}>
+                <TodoList todos={todos.value} refreshList={getTodos} />
+            </div>
+        </div>
     );
 });
