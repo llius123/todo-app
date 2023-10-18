@@ -19,7 +19,7 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
     "serve": "node server/entry.express",
-    "start": "vite --open --mode ssr",
+    "start": "node server/entry.express.js",
     "qwik": "qwik"
   },
   "devDependencies": {
